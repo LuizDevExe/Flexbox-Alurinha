@@ -1,2 +1,2 @@
 # Flexbox-Alurinha
- Projeto criado no intuito de praticar as possibilidades que o Flexbox oferece
+ Projeto proposto pela escola de Front-end Alura com o intuito de praticar as propriedades do Flexbox

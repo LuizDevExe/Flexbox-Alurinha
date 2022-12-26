@@ -40,9 +40,24 @@
 
 .videoSobre .container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}   
+
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
 
 /*Rodapé*/
 
@@ -74,7 +89,7 @@
 
 /* Versão mobile*/
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
 
 .cabecalhoPrincipal .container , .cabecalhoPrincipal-nav {
    display: flex;
@@ -85,10 +100,45 @@
 }
 
 .conteudoPrincipal-cursos {
+    flex-direction: column;
+}
+
+.conteudoPrincipal-cursos-link {
     width: 100%;
-    flex-flow: column wrap;
+}
+
+.rodapePrincipal-navMap-list {
+    height: auto;
+}
+
+.rodapePrincipal-patrocinadores .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    width: 100%;
+    align-items: center;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 100%;
+    
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    justify-content: center;
+}
+
+.cabecalhoPrincipal-nav-link-app{
+    order: -1;
+}
+
+.videoSobre .container {
+    flex-direction: column;
+    align-items: center;
 }
 
 
-
 }
+
